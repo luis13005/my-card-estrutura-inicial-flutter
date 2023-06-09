@@ -52,12 +52,34 @@ class Myapp extends StatelessWidget {
                       letterSpacing: 2.5),
                 ),
               ),
-              Text(
-                '________________________________',
-                style: TextStyle(color: Colors.white),
-              ),
               SizedBox(
-                child: Text(''),
+                child: Divider(color: Colors.white),
+                width: 280.0,
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 100.0),
+                child: ListTile(
+                  leading: Icon(Icons.phone,
+                      size: 15.0, color: Colors.blueGrey[900]),
+                  title: Text(
+                    '65 98140-7117',
+                    style: TextStyle(color: Colors.blueGrey[900]),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 3.5, horizontal: 100.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    size: 15.0,
+                    color: Colors.blueGrey[900],
+                  ),
+                  title: Text(
+                    'l_fp9999@hotmail.com',
+                    style: TextStyle(color: Colors.blueGrey[900]),
+                  ),
+                ),
               )
             ],
           ),
